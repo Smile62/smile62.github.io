@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>中国色 - 中国传统颜色</title>
+        <link rel="stylesheet" href="../css/ChineseColor.css">
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <div id="container">
+            <header id="logo">
+                <h1>中国色 Chinese Colors</h1>
+            </header>
+            <nav>
+                <!--中国色颜色列表-->
+                <ul id="colors"></ul>
+            </nav>
+            <article id="data">
+                <h2>
+                    <span id="name">中国色</span>
+                    <span id="pinyin">ZHONGGUOSE</span>
+                </h2>
+                <div id="color-value">
+                    <!--CMYK遮罩-->
+                    <dl id="CMYKcolor">
+                        <dt class="c">C</dt>
+                        <dd class="c">
+                            <span class="cont">0</span>
+                            <span class="circle"></span>
+                            <span class="r">
+                                <span class="line" style="transform: rotate(0deg);"></span>
+                            </span>
+                            <span class="l">
+                                <span class="line"></span>
+                            </span>
+                        </dd>
+                        <dt class="m">M</dt>
+                        <dd class="m">
+                            <span class="cont">0</span>
+                            <span class="circle"></span>
+                            <span class="r">
+                                <span class="line"></span>
+                            </span>
+                            <span class="l">
+                                <span class="line"></span>
+                            </span>
+                        </dd>
+                        <dt class="y">Y</dt>
+                        <dd class="y">
+                            <span class="cont">0</span>
+                            <span class="circle"></span>
+                            <span class="r">
+                                <span class="line"></span>
+                            </span>
+                            <span class="l">
+                                <span class="line"></span>
+                            </span>
+                        </dd>
+                        <dt class="k">K</dt>
+                        <dd class="k">
+                            <span class="cont">0</span>
+                            <span class="circle"></span>
+                            <span class="r">
+                                <span class="line" style="transform: rotate(0deg);"></span>
+                            </span>
+                            <span class="l">
+                                <span class="line" style="transform: rotate(180deg);"></span>
+                            </span>
+                        </dd>
+                    </dl>
+                    <!--RGB数值-->
+                    <div id="RGBcolor">
+                        <dl>
+                            <dt class="r altText">R</dt>
+                            <dd id="valueR" class="r">0</dd>
+                            <dt class="g altText">G</dt>
+                            <dd id="valueG" class="g">0</dd>
+                            <dt class="b altText">B</dt>
+                            <dd id="valueB" class="b">0</dd>
+                        </dl>
+                    </div>
+                    <!--输出RGB值-->
+                    <div id="hexValue">
+                        <span></span>
+                    </div>
+                </div>
+            </article>
+            <footer>
+                <p>参考网站：<a href="http://zhongguose.com/">中国色 - 中国传统色 (zhongguose.com)</a></p>
+            </footer>
+        </div>
+        <script src="../libs/jquery/jquery-3.6.0.js"></script>
+        <script src="../libs/countUP/countUp.umd.js"></script>
+        <script src="../js/ChineseColor.js"></script>
+    </body>
+</html>

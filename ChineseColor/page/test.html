@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>countUP功能测试</title>
+    </head>
+    <body>
+        <h1 id="num"></h1>
+        <!--只有countUp.umd.js有效果-->
+        <script src="../libs/countUP/countUp.umd.js"></script>
+        <script>
+            // options 参数设置
+            const options = {
+                startVal: 0,
+            };
+            // 直接new CountUP没反应，得像下面这样写才行。。。
+            let demo = new countUp.CountUp('num', 666, options);
+            if (!demo.error) {
+                demo.start();
+            } else {
+                console.error(demo.error);
+            };
+        </script>
+    </body>
+</html>
