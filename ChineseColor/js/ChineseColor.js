@@ -91,8 +91,7 @@ function drawArcAndLine(CMYK, RGB){
 }
 
 // 为li > div添加鼠标事件
-$('#colors').on('' +
-    '', 'li > div', function (event){
+$('#colors').on('mouseover mouseout click', 'li > div', function (event){
     let aEl = $(this).children();
     let pinyin = aEl.children('.pinyin').html();
     // 查找算法有待优化 TODO
